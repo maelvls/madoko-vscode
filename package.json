@@ -1,7 +1,7 @@
 {
-    "name": "koka",
-    "displayName": "koka",
-    "description": "Syntax support for Koka language",
+    "name": "madoko",
+    "displayName": "madoko",
+    "description": "",
     "version": "0.0.1",
     "publisher": "maelvalais",
     "engines": {
@@ -12,15 +12,15 @@
     ],
     "contributes": {
         "languages": [{
-            "id": "koka",
-            "aliases": ["Koka", "koka"],
-            "extensions": [".kk"],
+            "id": "madoko",
+            "aliases": ["Madoko", "madoko"],
+            "extensions": [".mdk",".md",".madoko",".markdown"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
-            "language": "koka",
-            "scopeName": "source.koka",
-            "path": "./syntaxes/koka.json"
+            "language": "madoko",
+            "scopeName": "source.madoko",
+            "path": "./syntaxes/madoko.tmLanguage"
         }]
     }
 }

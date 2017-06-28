@@ -14,7 +14,7 @@
         "languages": [{
             "id": "madoko",
             "aliases": ["Madoko", "madoko"],
-            "extensions": [".mdk",".md",".madoko",".markdown"],
+            "extensions": [".mdk",".madoko"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{

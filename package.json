@@ -1,9 +1,10 @@
 {
     "name": "madoko",
     "displayName": "madoko",
-    "description": "",
+    "description": "Syntax support for Madoko language",
     "version": "0.0.1",
     "publisher": "maelvalais",
+    "repository": "https://github.com/maelvalais/madoko-vscode",
     "engines": {
         "vscode": "^1.10.0"
     },

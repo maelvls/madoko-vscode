@@ -1,4 +1,5 @@
-{ "name": "Madoko",
+{ "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Madoko",
   "scopeName": "source.madoko",
   "fileTypes": ["mdk","md","madoko","markdown"],
   "author": "Daan Leijen",
@@ -281,11 +282,29 @@
 
     "inline": {
       "patterns": [
-        { "match": "\\[(\\^?[\\w\\-\\.:]+)\\](?!\\s*[\\[(])(\\{(?:[^\\\\}]|\\\\.)+\\})?"
+        { "name":"meta.link.footnote",
+          "match": "\\[(\\^?[\\w\\-\\.:]+)\\](?!\\s*[\\[(])(\\{(?:[^\\\\}]|\\\\.)+\\})?"
         , "captures": {
             "1": { "name": "constant.numeric.madoko" },
             "2": { "name": "comment meta.tag.preprocessor.xml" }
           }
+        },
+        { "name":"meta.link.bib-reference",
+          "begin": "\\[\\s*(?=@)",
+          "end": "\\]",
+          "beginCaptures": {
+            "1": { "name": "constant.numeric.madoko" }
+          },
+          "patterns": [
+            { "name": "meta.link.bib-reference.elmt",
+              "match": "(@[\\w\\-\\.:_]+)",
+              "captures": {"1": {"name": "constant.numeric.madoko"}}
+            },
+            { "name": "meta.link.bib-reference.separator",
+              "match": "(;)",
+              "captures": {"1": {"name": "keyword.other"}}
+            }
+          ]
         },
 
         { "match": "#[\\w\\-\\.:]+"

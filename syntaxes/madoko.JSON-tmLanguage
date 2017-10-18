@@ -365,8 +365,8 @@
         , "name": "string.escape.madoko"
         },
 
-        { "match": "&(#(\\d+|x[\\da-fA-F]+)|\\w+);"
-        , "name": "string.escape.madoko"
+        { "match": "&(#(\\d+|x[\\da-fA-F]+)|[\\w_-]+);"
+        , "name": "string.escape.entity.madoko"
         },
 
         { "match": "(---?|\\.\\.\\.|<<|>>)"

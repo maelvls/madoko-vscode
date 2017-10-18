@@ -3,6 +3,7 @@
     "displayName": "madoko",
     "description": "Syntax support for Madoko language",
     "version": "0.0.1",
+    "license": "MIT",
     "publisher": "maelvalais",
     "repository": "https://github.com/maelvalais/madoko-vscode",
     "engines": {
@@ -12,16 +13,34 @@
         "Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "madoko",
-            "aliases": ["Madoko", "madoko"],
-            "extensions": [".mdk",".madoko"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "madoko",
-            "scopeName": "source.madoko",
-            "path": "./syntaxes/madoko.tmLanguage"
-        }]
+        "languages": [
+            {
+                "id": "madoko",
+                "aliases": [
+                    "Madoko",
+                    "madoko"
+                ],
+                "extensions": [
+                    ".mdk",
+                    ".madoko"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "madoko",
+                "scopeName": "source.madoko",
+                "path": "./syntaxes/madoko.tmLanguage"
+            }
+        ]
+    },
+    "devDependencies": {
+        "plist": "latest",
+        "glob-watcher": "^4.0.0"
+    },
+    "scripts": {
+        "start": "node build.js -w",
+        "compile": "node build.js"
     }
 }

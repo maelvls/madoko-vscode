@@ -2,7 +2,7 @@
     "name": "madoko",
     "displayName": "madoko",
     "description": "Syntax support for Madoko language",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "license": "MIT",
     "publisher": "maelvalais",
     "repository": "https://github.com/maelvalais/madoko-vscode",

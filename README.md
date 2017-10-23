@@ -13,7 +13,33 @@ This extension is basically a copy-paste of the `.tmLanguage` files that
 are available in the madoko repository. The file extensions are `.mdk` and
 `.madoko`.
 
+# Tips
+
+If you want to "rewrap to 80 characters" manually (`⌥Q` in madoko.net), you
+can install the extension **Rewrap** and map the `rewrap.rewrapComment`
+command to `⌥Q`:
+```json
+{
+  "command": "rewrap.rewrapComment",
+  "key": "alt+q",
+  "when": "editorTextFocus"
+}
+```
+For table re-wrapping and auto-arranging, I use **Table Formatter** and map
+the table re-wrapping to `⇧⌥Q`:
+```json
+{
+  "command": "extension.table.formatCurrent",
+  "key": "shift+alt+q",
+  "when": "editorTextFocus"
+}
+```
+
 # Change Log
+
+## 0.0.3
+- turn word wrap on by default for the Madoko language, similarly
+  to Markdown (contributed by kvn-s)
 
 ## 0.0.2
 - fixed coloring of bib citations. Example: `[@ref; @ref, p. 32]`.

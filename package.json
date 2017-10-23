@@ -2,7 +2,7 @@
     "name": "madoko",
     "displayName": "madoko",
     "description": "Syntax support for Madoko language",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "license": "MIT",
     "publisher": "maelvalais",
     "repository": "https://github.com/maelvalais/madoko-vscode",
@@ -33,7 +33,12 @@
                 "scopeName": "source.madoko",
                 "path": "./syntaxes/madoko.tmLanguage"
             }
-        ]
+        ],
+        "configurationDefaults": {
+            "[madoko]": {
+                "editor.wordWrap": "on"
+            }
+        }
     },
     "devDependencies": {
         "plist": "latest",

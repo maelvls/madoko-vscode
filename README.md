@@ -13,6 +13,10 @@ This extension is basically a copy-paste of the `.tmLanguage` files that
 are available in the madoko repository. The file extensions are `.mdk` and
 `.madoko`.
 
+Screenshot showing the syntax highlighting:
+
+![screenshot](https://user-images.githubusercontent.com/2195781/32697975-3a9e5016-c79c-11e7-986f-faa1ae8d7fca.png)
+
 # Tips
 
 If you want to "rewrap to 80 characters" manually (`⌥Q` in madoko.net), you

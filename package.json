@@ -2,8 +2,9 @@
     "name": "madoko",
     "displayName": "madoko",
     "description": "Syntax support for Madoko language",
-    "version": "0.0.3",
-    "license": "MIT",
+    "version": "0.0.4",
+	"license": "MIT",
+	"icon": "images/logo.png",
     "publisher": "maelvalais",
     "repository": "https://github.com/maelvalais/madoko-vscode",
     "engines": {

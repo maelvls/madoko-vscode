@@ -55,23 +55,27 @@ you must reload vscode with ⇧⌘P + `Reload Windows`.
 
 I also recommend to run ⇧⌘P + `Inspect TM scopes` in order to inspect in your
 `.mdk` in what scope each character is. This will help you finding where
-the faulty rule is in `madoko.JSON-tmLanguage`.
+the faulty rule is in `syntaxes/madoko.json`.
 
 For example, take this wrong highlighting on `* __BOLD__`; I first open
 `Inspect TM scopes` to inspect the tmLanguage scopes:
 
 ![Wrong highlighting of *__BOLD__ in a mdk file](https://user-images.githubusercontent.com/2195781/32697892-22ecdf10-c79b-11e7-9fbf-c4d5f90a8675.png)
 
-Then, I search inside the `madoko.JSON-tmLanguage` and look for the scope
+Then, I search inside the `syntaxes/madoko.json` and look for the scope
 `keyword` and `markup.heading.madoko`:
 
-![The faulty tmgramamr rule in madoko.JSON-tmLanguage](https://user-images.githubusercontent.com/2195781/32697893-23b483a8-c79b-11e7-9aed-7659c8dd7fb4.png)
+![The faulty tmgramamr rule in syntaxes/madoko.json](https://user-images.githubusercontent.com/2195781/32697893-23b483a8-c79b-11e7-9aed-7659c8dd7fb4.png)
 
 Note that usually, tmLanguage scopes are specific to each rule so that we
 can find the faulty rule easily. But here, the tmLanguage file (I did not
 write it) has been written _à la CSS_ and the scopes are not really helping...
 
 # Change Log
+## 0.0.4
+- `$...$` can now span multiple lines
+- `$$...$$` and `$...$` are now highlighted as in the LaTex Workshop extension
+- the `~ Math` block wasn't highlighted as latex code
 
 ## 0.0.3
 - turn word wrap on by default for the Madoko language, similarly

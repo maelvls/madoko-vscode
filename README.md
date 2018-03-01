@@ -41,7 +41,8 @@ the table re-wrapping to `⇧⌥Q`:
 
 # If you want to improve the grammar
 
-- clone the project into your ~/.vscode/extensions folder:
+- clone the project into your `~/.vscode/extensions` (or
+  `~/.vscode-insiders/extensions`) folder:
 
       git clone git@github.com:maelvalais/madoko-vscode.git ~/.vscode/extensions/madoko-vscode
 
@@ -49,18 +50,8 @@ the table re-wrapping to `⇧⌥Q`:
 
       code ~/.vscode/extensions/madoko-vscode
 
-- from this folder, install the dev dependencies:
-
-      npm install
-
-- then you can launch the automatic compilation of `madoko.JSON-tmLanguage`:
-
-      npm start
-
-When you make changes to `madoko.JSON-tmLanguage`, `madoko.tmLanguage` will
-be produced automatically. Now, you can start hacking `madoko.JSON-tmLanguage`.
-In order to see the changes in your `.mdk`, you must reload vscode with
-⇧⌘P + `Reload Windows`.
+In order to see the changes makde to `syntaxes/madoko.json` in your `.mdk`,
+you must reload vscode with ⇧⌘P + `Reload Windows`.
 
 I also recommend to run ⇧⌘P + `Inspect TM scopes` in order to inspect in your
 `.mdk` in what scope each character is. This will help you finding where

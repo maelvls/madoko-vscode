@@ -31,7 +31,7 @@
             {
                 "language": "madoko",
                 "scopeName": "source.madoko",
-                "path": "./syntaxes/madoko.tmLanguage"
+                "path": "./syntaxes/madoko.json"
             }
         ],
         "configurationDefaults": {
@@ -39,13 +39,5 @@
                 "editor.wordWrap": "on"
             }
         }
-    },
-    "devDependencies": {
-        "plist": "latest",
-        "glob-watcher": "^4.0.0"
-    },
-    "scripts": {
-        "start": "node build.js -w",
-        "compile": "node build.js"
     }
 }

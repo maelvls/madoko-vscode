@@ -373,17 +373,17 @@
         , "name": "string.escape.madoko"
         },
 
-        { "begin": "\\$\\$"
-        , "end": "\\$\\$"
-        , "contentName": "source.embedded.latex"
+        { "begin": "(\\$\\$)"
+        , "end": "(\\$\\$)"
+        , "name": "string.other.math.tex"
         , "patterns": [
             {"include": "text.tex.latex" }
           ]
         },
 
-        { "begin": "\\$(?=.*\\$)"
-        , "end": "\\$|$"
-        , "contentName": "source.embedded.latex"
+        { "begin": "(\\$)(?=.*\\$)"
+        , "end": "(\\$)|$"
+        , "name": "string.other.math.tex"
         , "patterns": [
             {"include": "text.tex.latex" }
           ]

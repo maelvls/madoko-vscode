@@ -381,8 +381,8 @@
           ]
         },
 
-        { "begin": "(\\$)(?=.*\\$)"
-        , "end": "(\\$)|$"
+        { "begin": "(\\$)"
+        , "end": "(\\$)"
         , "name": "string.other.math.tex"
         , "patterns": [
             {"include": "text.tex.latex" }
